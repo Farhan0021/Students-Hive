@@ -46,7 +46,7 @@ const Home = () => {
                       return(
                          <div className="property-item col-md-4">
                     <a href="property-single.html" className="img">
-                      <img src={`http://localhost:3000/upload_images/${item.image}`} alt="Image" className="img-fluid" />
+                      <img src={`${import.meta.env.VITE_API_URL}/upload_images/${item.image}`} alt="Image" className="img-fluid" />
                     </a>
   
                     <div className="property-content">
