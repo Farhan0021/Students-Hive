@@ -8,6 +8,8 @@ const Home = () => {
 
   let [allProp, setAllProp] = useState([])
   useEffect(()=>{
+    console.log('API_URL:', import.meta.env.VITE_API_URL);
+
     axios.get(`${import.meta.env.VITE_API_URL}/property`)
     .then(response=>{
       setAllProp(response.data);
